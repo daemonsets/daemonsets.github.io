@@ -35,4 +35,32 @@ Code block above fails with an error such as:
 
 ```
 
-You can read more about scopes [here](https://developer.mozilla.org/en-US/docs/Glossary/Scope). 
+You can read more about scopes [here](https://developer.mozilla.org/en-US/docs/Glossary/Scope).
+
+ **Question:** Why wasn't just `var` modified to be block-scoped? 
+
+ > It wasn't done so due to the backward compatibility reasons. If `var` was changed to be block scoped a lot of existing code would go useless. 
+
+The `const` keyword is a new block-scoped keyword that is used to define constants. Thus, once the value of a constant has been defined, it cannot be changed later on. The following code, for example, would result in an error:
+ 
+```javascript
+const AGE = 23
+AGE = 27
+```
+
+```
+"TypeError: Assignment to constant variable.
+    at yozibopigo.js:2:5
+    at https://static.jsbin.com/js/prod/runner-4.1.8.min.js:1:13924
+    at https://static.jsbin.com/js/prod/runner-4.1.8.min.js:1:10866"
+```
+
+> It is important to keep in mind that when a constant is defined, it does not hold the value but merely refers to the value being defined. Which is why, when a refernce type such as an array or an object is defined as a constant, they can be altered without an issue. 
+
+Since, `const` holds a reference type as explained above, following code block works just fine: 
+
+```javascript
+const AGES = [23, 24, 25]
+AGES.push(26)
+```
+
