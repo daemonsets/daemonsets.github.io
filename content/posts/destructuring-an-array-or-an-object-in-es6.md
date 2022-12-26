@@ -6,7 +6,7 @@ draft: false
 
 `Destructuring` is a cool new feature which allows you to easily extract values from an object or an array.
 
-> It is importnat to note, that destructuring for arrays is position based, whereas for in case of objects it is based on the names of the keys. 
+> It is importnat to note, that destructuring for arrays is position based, whereas in case of the objects it is based on the names of the keys. 
 
 ### Array:
 
