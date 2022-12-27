@@ -17,9 +17,9 @@ it('should summarize all number values in an array', ()=>{
 ```
 > *Question: What is AAA (Arrange, Act, Assert) pattern in testing?*
 >
-> *AAA pattern allows you to write unit tests which are more readale and maintainable in long term.*
+> *AAA pattern allows you to write unit tests which are more readable and maintainable in long term.*
 
-- Arrange Phase: is where you define the tetsing enviornment and values. 
+- Arrange Phase: is where you define the testing enviornment and values. 
 - Act phase: is where you run the actual code / function that should be tested.
 - Assert Phase: is where you evaluate the produced value. 
 
